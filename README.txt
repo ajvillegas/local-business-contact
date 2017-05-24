@@ -28,21 +28,21 @@ The example below demonstrates how you can implement this filter on your theme:
 /**
  * Filter to add extra schema types to the schema select option.
  *
- * @param	array	An array containing default values.
- * @return	array	An array containing new values.
+ * @param   array   An array containing default values.
+ * @return  array   An array containing new values.
  */
 function myprefix_add_schema_types( $schema ) {
 	
-	// Add new schema types to array
-	$new_schema = array(
-		'GardenStore' => esc_html__( 'Garden Store', 'my-text-domain' ),
-		'ComputerStore' => esc_html__( 'Computer Store', 'my-text-domain' ),
-	);
+    // Add new schema types to array
+    $new_schema = array(
+        'GardenStore' => esc_html__( 'Garden Store', 'my-text-domain' ),
+        'ComputerStore' => esc_html__( 'Computer Store', 'my-text-domain' ),
+    );
 	
-	// Combine the two arrays
-	$schema = array_merge( $new_schema, $schema );
+    // Combine the two arrays
+    $schema = array_merge( $new_schema, $schema );
 	
-	return $schema;
+    return $schema;
 	
 }`
 
