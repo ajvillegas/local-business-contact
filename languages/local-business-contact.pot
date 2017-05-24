@@ -1,0 +1,415 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Local Business Contact\n"
+"POT-Creation-Date: 2017-05-23 16:32-0700\n"
+"PO-Revision-Date: 2017-05-23 16:30-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: local-business-contact.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-local-business-contact-admin.php:101
+#: admin/class-local-business-contact-settings.php:37
+msgid "Business Settings"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:38
+msgid "Local Business Settings"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:183
+#: admin/class-local-business-contact-settings.php:206
+msgid "Contact Information"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:184
+msgid "Contact Information Settings"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:185
+msgid ""
+"This section allows you to edit the business contact information that is "
+"displayed througout the website."
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:186
+#, php-format
+msgid ""
+"By separating each field, the plugin can apply the appropriate %1$s markup "
+"when rendering the information in the front-end of the website. You can "
+"display all or individual sections on your website using the %2$s shortcode, "
+"as well as the %3$s widget."
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:186
+#: admin/class-local-business-contact-settings.php:194
+#: admin/partials/local-business-contact-info-metabox.php:63
+msgid "Schema.org"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:186
+#: admin/class-local-business-contact-settings.php:194
+#: widgets/class-widget-business-contact.php:35
+msgid "Business Contact"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:191
+#: admin/class-local-business-contact-settings.php:208
+msgid "Business Hours"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:192
+msgid "Business Hours Settings"
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:193
+msgid ""
+"This section allows you to edit the business operating hours displayed "
+"througout the website."
+msgstr ""
+
+#: admin/class-local-business-contact-settings.php:194
+#, php-format
+msgid ""
+"The plugin applies the appropriate %1$s markup when rendering the hours in "
+"the front-end of the website. To display the hours on your website you can "
+"use the %2$s shortcode, as well as the %3$s widget."
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:21
+msgid "Heading"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:30
+#: public/class-local-business-contact-public.php:197
+#: public/class-local-business-contact-public.php:202
+msgid "Monday"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:34
+#: admin/partials/local-business-contact-hours-metabox.php:55
+#: admin/partials/local-business-contact-hours-metabox.php:76
+#: admin/partials/local-business-contact-hours-metabox.php:97
+#: admin/partials/local-business-contact-hours-metabox.php:118
+#: admin/partials/local-business-contact-hours-metabox.php:139
+#: admin/partials/local-business-contact-hours-metabox.php:160
+msgid "Closed"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:51
+#: public/class-local-business-contact-public.php:211
+#: public/class-local-business-contact-public.php:216
+msgid "Tuesday"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:72
+#: public/class-local-business-contact-public.php:225
+#: public/class-local-business-contact-public.php:230
+msgid "Wednesday"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:93
+#: public/class-local-business-contact-public.php:239
+#: public/class-local-business-contact-public.php:244
+msgid "Thursday"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:114
+#: public/class-local-business-contact-public.php:253
+#: public/class-local-business-contact-public.php:258
+msgid "Friday"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:135
+#: public/class-local-business-contact-public.php:267
+#: public/class-local-business-contact-public.php:272
+msgid "Saturday"
+msgstr ""
+
+#: admin/partials/local-business-contact-hours-metabox.php:156
+#: public/class-local-business-contact-public.php:281
+#: public/class-local-business-contact-public.php:286
+msgid "Sunday"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:16
+msgid "Organization"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:17
+msgid "Corporation"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:18
+msgid "Educational Organization"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:19
+msgid "Government Organization"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:20
+msgid "Local Business"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:21
+msgid "Animal Shelter"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:22
+msgid "Automotive Business"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:23
+msgid "Child Care"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:24
+msgid "Dry Cleaning or Laundry"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:25
+msgid "Emergency Service"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:26
+msgid "Employment Agency"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:27
+msgid "Entertainment Business"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:28
+msgid "Financial Service"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:29
+msgid "Food Establishment"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:30
+msgid "Government Office"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:31
+msgid "Health and Beauty Business"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:32
+msgid "Home and Construction Business"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:33
+msgid "Internet Cafe"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:34
+msgid "Library"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:35
+msgid "Lodging Business"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:36
+msgid "Medical Organization"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:37
+msgid "Radio Station"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:38
+msgid "Real Estate Agent"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:39
+msgid "Recycling Center"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:40
+msgid "Self Storage"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:41
+msgid "Sports Activity Location"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:42
+msgid "Store"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:43
+msgid "Tourist Information Center"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:44
+msgid "Travel Agency"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:45
+msgid "NGO"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:46
+msgid "PerformingGroup"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:47
+msgid "SportsTeam"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:54
+msgid "Schema Type"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:63
+#, php-format
+msgid "Select the %s type that best describes your business."
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:70
+msgid "Business Name"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:79
+msgid "Street Address"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:88
+msgid "City/Town"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:97
+msgid "State/Province"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:106
+msgid "Postcode"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:115
+msgid "Business Phone"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:124
+msgid "Business Fax"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:133
+msgid "Business Email"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:142
+msgid "Additional Data"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:148
+msgid "Enable additional data?"
+msgstr ""
+
+#: admin/partials/local-business-contact-info-metabox.php:154
+msgid ""
+"Use this field to add any additional information you want to display under "
+"the contact details. Accepts basic HTML and shortcodes."
+msgstr ""
+
+#: includes/class-local-business-contact-activator.php:51
+#, php-format
+msgid ""
+"Sorry, you can't activate the %1$s plugin unless you have installed "
+"%2$sGenesis%3$s."
+msgstr ""
+
+#: includes/class-local-business-contact-activator.php:52
+msgid "Parent Archive Template"
+msgstr ""
+
+#: includes/class-local-business-contact-activator.php:60
+msgid "Plugin"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: includes/class-local-business-contact-activator.php:60
+msgid "Local Business Contact"
+msgstr ""
+
+#: public/class-local-business-contact-public.php:153
+msgid "Tel:"
+msgstr ""
+
+#: public/class-local-business-contact-public.php:160
+msgid "Fax:"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:27
+msgid "Displays business contact information and operating hours."
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:162
+msgid "Title:"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:167
+msgid "Edit contact info under Genesis > Business Settings."
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:172
+msgid "Show Business Name"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:177
+msgid "Show Address"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:182
+msgid "Show Business Phone"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:187
+msgid "Show Business Fax"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:192
+msgid "Show Business Email"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:197
+msgid "Show Additional Data"
+msgstr ""
+
+#: widgets/class-widget-business-contact.php:202
+msgid "Show Business Hours"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.alexisvillegas.com/local-business-contact"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Display business contact information and operating hours with proper Schema."
+"org markup."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Alexis J. Villegas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.alexisvillegas.com"
+msgstr ""
