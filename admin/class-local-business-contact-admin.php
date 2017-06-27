@@ -117,7 +117,7 @@ class Local_Business_Contact_Admin {
 	 */
 	public function register_tinymce_button( $buttons ) {
 		
-		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) && get_user_option( 'rich_editing' ) == 'true' ) {
+		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) && 'true' == get_user_option( 'rich_editing' ) ) {
 			
 			array_push( $buttons, 'lbc_business_contact' );
 			
@@ -134,13 +134,26 @@ class Local_Business_Contact_Admin {
 	 */
 	public function load_tinymce_plugin( $plugin_array ) {
 		
-		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) && get_user_option( 'rich_editing' ) == 'true' ) {
+		if ( current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) && 'true' == get_user_option( 'rich_editing' ) ) {
 		
 			$plugin_array['lbc_business_contact'] = plugin_dir_url( __FILE__ ) . '/js/local-business-contact-tinymce.min.js';
 			
 		}
 		
 		return $plugin_array;
+		
+	}
+	
+	/**
+	 * Embed CSS to admin <head>.
+	 *
+	 * @since    1.0.0
+	 */
+	public function embed_admin_css() {
+		
+		?>
+		<style>i.mce-i-icon{font:normal 20px/1 'dashicons';padding:0;vertical-align:top;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-left:-2px;padding-right:2px}</style>
+		<?php
 		
 	}
 	
