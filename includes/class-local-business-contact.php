@@ -171,6 +171,9 @@ class Local_Business_Contact {
 		
 		// Load TinyMCE plugin for the shortcode
 		$this->loader->add_filter( 'mce_external_plugins', $plugin_admin, 'load_tinymce_plugin' );
+		
+		// Embed CSS to admin <head>
+		$this->loader->add_filter( 'admin_head', $plugin_admin, 'embed_admin_css' );
 
 	}
 
