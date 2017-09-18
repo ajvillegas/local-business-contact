@@ -69,7 +69,7 @@ class Local_Business_Contact {
 	public function __construct() {
 
 		$this->plugin_name = 'local-business-contact';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
