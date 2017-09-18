@@ -6,7 +6,7 @@ Display business contact information and operating hours with proper [Schema.org
 **Tags**: [address](http://wordpress.org/plugins/tags/address), [seo](http://wordpress.org/plugins/tags/seo), [local seo](http://wordpress.org/plugins/tags/local-seo), [schema](http://wordpress.org/plugins/tags/schema), [genesis](http://wordpress.org/plugins/tags/genesis)  
 **Requires at least**: 4.5  
 **Tested up to**: 4.8  
-**Stable tag**: 1.0.0  
+**Stable tag**: 1.0.1  
 **License**: [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
 # Description
@@ -81,6 +81,10 @@ To export your business settings, simply go to Genesis > Import/Export and selec
 ![Business Contact widget](wp-assets/screenshot-2.png?raw=true)
 
 # Changelog
+
+**1.0.1**
+* Updated the business hours default values.
+* Added a parent div to the address output for styling purposes.
 
 **1.0.0**
 * Initial release.
