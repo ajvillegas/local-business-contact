@@ -135,16 +135,18 @@ class Local_Business_Contact_Public {
 				
 				if ( $address && 1 == $atts['address'] ) { ?>
 					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="lbc-business-address">
-						<div itemprop="streetAddress" class="lbc-address-street"><?php echo nl2br( $address ) . ' '; ?></div> <?php
-					if ( $city ) { ?>
-						<span itemprop="addressLocality" class="lbc-address-city"><?php echo $city . ' '; ?></span> <?php
-					}
-					if ( $state ) { ?>
-						<span itemprop="addressRegion" class="lbc-address-region"><?php echo $state . ' '; ?></span> <?php
-					}
-					if ( $postcode ) { ?>
-						<span itemprop="postalCode" class="lbc-address-postcode"><?php echo $postcode; ?></span> <?php
-					} ?>
+						<div class="address-wrap">
+							<div itemprop="streetAddress" class="lbc-address-street"><?php echo nl2br( $address ) . ' '; ?></div> <?php
+						if ( $city ) { ?>
+							<span itemprop="addressLocality" class="lbc-address-city"><?php echo $city . ' '; ?></span> <?php
+						}
+						if ( $state ) { ?>
+							<span itemprop="addressRegion" class="lbc-address-region"><?php echo $state . ' '; ?></span> <?php
+						}
+						if ( $postcode ) { ?>
+							<span itemprop="postalCode" class="lbc-address-postcode"><?php echo $postcode; ?></span> <?php
+						} ?>
+						</div>
 					</div> <?php
 				}
 				
