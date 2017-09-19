@@ -166,7 +166,7 @@ class Local_Business_Contact_Public {
 				
 				if ( $email && 1 == $atts['email'] ) { ?>
 					<div itemprop="email" class="lbc-business-email">
-						<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+						<a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a>
 					</div> <?php
 				}
 				
