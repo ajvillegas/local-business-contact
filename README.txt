@@ -79,6 +79,7 @@ To export your business settings, simply go to Genesis > Import/Export and selec
 = 1.0.1 =
 * Updated the business hours default values.
 * Added a parent div to the address output for styling purposes.
+* Added encoding to email address output to block spam bots.
 
 = 1.0.0 =
 * Initial release.
