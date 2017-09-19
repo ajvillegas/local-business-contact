@@ -153,14 +153,14 @@ class Local_Business_Contact_Public {
 				if ( $phone && 1 == $atts['phone'] ) { ?>
 					<div itemprop="telephone" class="lbc-business-phone">
 						<span class="lbc-phone-label"><?php esc_html_e( 'Tel:', 'local-business-contact' ) . ' '; ?></span>
-						<a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+						<a href="tel:<?php echo preg_replace( '/[^0-9]/', '', $phone ); ?>"><?php echo $phone; ?></a>
 					</div> <?php
 				}
 				
 				if ( $fax && 1 == $atts['fax'] ) { ?>
 					<div itemprop="faxNumber" class="lbc-business-fax">
 						<span class="lbc-fax-label"><?php esc_html_e( 'Fax:', 'local-business-contact' ) . ' '; ?></span>
-						<a href="fax:<?php echo $fax; ?>"><?php echo $fax; ?></a>
+						<a href="fax:<?php echo preg_replace( '/[^0-9]/', '', $fax ); ?>"><?php echo $fax; ?></a>
 					</div> <?php
 				}
 				
