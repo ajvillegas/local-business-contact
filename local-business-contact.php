@@ -16,7 +16,7 @@
  * Plugin Name:       Local Business Contact
  * Plugin URI:        http://www.alexisvillegas.com/plugins/local-business-contact
  * Description:       Display business contact information and operating hours with proper Schema.org markup.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Alexis J. Villegas
  * Author URI:        http://www.alexisvillegas.com
  * License:           GPL-2.0+
