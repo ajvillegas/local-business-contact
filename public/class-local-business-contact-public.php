@@ -135,6 +135,9 @@ class Local_Business_Contact_Public {
 				
 				if ( $address && 1 == $atts['address'] ) { ?>
 					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="lbc-business-address">
+						<span class="lbc-address-label">
+							<?php echo esc_html( apply_filters( 'lbc_filter_address_label', __( 'Address:', 'local-business-contact' ) ) ) . ' '; ?>
+						</span>
 						<div class="address-wrap">
 							<div itemprop="streetAddress" class="lbc-address-street"><?php echo nl2br( $address ) . ' '; ?></div> <?php
 						if ( $city ) { ?>
@@ -152,20 +155,27 @@ class Local_Business_Contact_Public {
 				
 				if ( $phone && 1 == $atts['phone'] ) { ?>
 					<div itemprop="telephone" class="lbc-business-phone">
-						<span class="lbc-phone-label"><?php esc_html_e( 'Tel:', 'local-business-contact' ) . ' '; ?></span>
-						<a href="tel:<?php echo preg_replace( '/[^0-9]/', '', $phone ); ?>"><?php echo $phone; ?></a>
+						<span class="lbc-phone-label">
+							<?php echo esc_html( apply_filters( 'lbc_filter_phone_label', __( 'Tel:', 'local-business-contact' ) ) ) . ' '; ?>
+						</span>
+						<a href="tel:<?php echo apply_filters( 'lbc_filter_phone_uri', preg_replace( '/[^0-9]/', '', $phone ) ); ?>"><?php echo $phone; ?></a>
 					</div> <?php
 				}
 				
 				if ( $fax && 1 == $atts['fax'] ) { ?>
 					<div itemprop="faxNumber" class="lbc-business-fax">
-						<span class="lbc-fax-label"><?php esc_html_e( 'Fax:', 'local-business-contact' ) . ' '; ?></span>
-						<a href="fax:<?php echo preg_replace( '/[^0-9]/', '', $fax ); ?>"><?php echo $fax; ?></a>
+						<span class="lbc-fax-label">
+							<?php echo esc_html( apply_filters( 'lbc_filter_fax_label', __( 'Fax:', 'local-business-contact' ) ) ) . ' '; ?>
+						</span>
+						<a href="fax:<?php echo apply_filters( 'lbc_filter_fax_uri', preg_replace( '/[^0-9]/', '', $fax ) ); ?>"><?php echo $fax; ?></a>
 					</div> <?php
 				}
 				
 				if ( $email && 1 == $atts['email'] ) { ?>
 					<div itemprop="email" class="lbc-business-email">
+						<span class="lbc-email-label">
+							<?php echo esc_html( apply_filters( 'lbc_filter_email_label', __( 'Email:', 'local-business-contact' ) ) ) . ' '; ?>
+						</span>
 						<a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a>
 					</div> <?php
 				}
