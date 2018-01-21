@@ -3,8 +3,8 @@ Contributors: ajvillegas
 Donate link:
 Tags: address, seo, local seo, schema, genesis
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.0.0
+Tested up to: 4.9
+Stable tag: 1.0.2 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,17 @@ function myprefix_add_schema_types( $schema ) {
 
 For more information and a complete list of schema types, please refer to this page: [Schema Types](http://schema.org/docs/full.html)
 
+**Output Filters**
+
+The following filters can be used for editing the contact information label outputs, as well as the phone and fax number URI outputs.
+
+* `lbc_filter_address_label` - Filter the local address label.
+* `lbc_filter_phone_label` - Filter the phone number label.
+* `lbc_filter_fax_label` - Filter the fax number label.
+* `lbc_filter_email_label` - Filter the email address label.
+* `lbc_filter_phone_uri` - Filter the phone number URI output. Useful for prepending country codes to the phone number.
+* `lbc_filter_fax_uri` - Filter the fax number URI output. Useful for prepending country codes to the fax number.
+
 **Import/Export**
 
 Local Business Contact fully integrates with the Genesis built-in import/export functionality so you can easily backup your settings.
@@ -75,6 +86,10 @@ To export your business settings, simply go to Genesis > Import/Export and selec
 2. Business Contact widget
 
 == Changelog ==
+
+= 1.0.2 =
+* Added the following filters for editing the contact information label outputs: `lbc_filter_address_label`, `lbc_filter_phone_label`, `lbc_filter_fax_label`, `lbc_filter_email_label`.
+* Added the following filters for editing the phone and fax number URI outputs: `lbc_filter_phone_uri`, `lbc_filter_fax_uri`.
 
 = 1.0.1 =
 * Updated the business hours default values.
