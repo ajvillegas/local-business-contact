@@ -6,7 +6,7 @@ Display business contact information and operating hours with proper [Schema.org
 **Tags**: [address](http://wordpress.org/plugins/tags/address), [seo](http://wordpress.org/plugins/tags/seo), [local seo](http://wordpress.org/plugins/tags/local-seo), [schema](http://wordpress.org/plugins/tags/schema), [genesis](http://wordpress.org/plugins/tags/genesis)  
 **Requires at least**: 4.5  
 **Tested up to**: 4.9  
-**Stable tag**: 1.0.2  
+**Stable tag**: 1.0.3  
 **License**: [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
 # Description
@@ -92,6 +92,9 @@ To export your business settings, simply go to Genesis > Import/Export and selec
 ![Business Contact widget](wp-assets/screenshot-2.png?raw=true)
 
 # Changelog
+
+**1.0.3**
+* Added custom content filters for the Additional Data field to avoid conflicts with `the_content` filter.
 
 **1.0.2**
 * Added the following filters for editing the contact information label outputs: `lbc_filter_address_label`, `lbc_filter_phone_label`, `lbc_filter_fax_label`, `lbc_filter_email_label`.
