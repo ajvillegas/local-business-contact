@@ -79,6 +79,13 @@ class Local_Business_Contact_Public {
 		
 		ob_start();
 		
+		// Define custom content filters
+		add_filter( 'lbc_additional_data_content', 'wptexturize' );
+		add_filter( 'lbc_additional_data_content', 'convert_smilies', 20 );
+		add_filter( 'lbc_additional_data_content', 'wpautop' );
+		add_filter( 'lbc_additional_data_content', 'shortcode_unautop' );
+		add_filter( 'lbc_additional_data_content', 'do_shortcode', 11 );
+		
 		// Define attributes and default values
 		$atts = shortcode_atts( array(
 			'name'    => 1,
@@ -182,7 +189,7 @@ class Local_Business_Contact_Public {
 				
 				if ( $extra && 1 == $extra_check && 1 == $atts['extra'] ) { ?>
 					<div class="lbc-additional-data">
-						<?php echo apply_filters( 'the_content', $extra ); ?>
+						<?php echo apply_filters( 'lbc_additional_data_content', $extra ); ?>
 					</div> <?php
 				}
 				
