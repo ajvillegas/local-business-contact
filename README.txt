@@ -4,7 +4,7 @@ Donate link:
 Tags: address, seo, local seo, schema, genesis
 Requires at least: 4.5
 Tested up to: 4.9
-Stable tag: 1.0.2 
+Stable tag: 1.0.3 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,6 +86,9 @@ To export your business settings, simply go to Genesis > Import/Export and selec
 2. Business Contact widget
 
 == Changelog ==
+
+= 1.0.3 =
+* Added custom content filters for the Additional Data field to avoid conflicts with `the_content` filter.
 
 = 1.0.2 =
 * Added the following filters for editing the contact information label outputs: `lbc_filter_address_label`, `lbc_filter_phone_label`, `lbc_filter_fax_label`, `lbc_filter_email_label`.
