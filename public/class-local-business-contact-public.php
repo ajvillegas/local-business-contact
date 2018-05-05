@@ -146,15 +146,15 @@ class Local_Business_Contact_Public {
 							<?php echo esc_html( apply_filters( 'lbc_filter_address_label', __( 'Address:', 'local-business-contact' ) ) ) . ' '; ?>
 						</span>
 						<div class="address-wrap">
-							<div itemprop="streetAddress" class="lbc-address-street"><?php echo nl2br( $address ) . ' '; ?></div> <?php
+							<div itemprop="streetAddress" class="lbc-address-street"><?php echo nl2br( esc_html( $address ) ) . ' '; ?></div> <?php
 						if ( $city ) { ?>
-							<span itemprop="addressLocality" class="lbc-address-city"><?php echo $city . ' '; ?></span> <?php
+							<span itemprop="addressLocality" class="lbc-address-city"><?php echo esc_html( $city ) . ' '; ?></span> <?php
 						}
 						if ( $state ) { ?>
-							<span itemprop="addressRegion" class="lbc-address-region"><?php echo $state . ' '; ?></span> <?php
+							<span itemprop="addressRegion" class="lbc-address-region"><?php echo esc_html( $state ) . ' '; ?></span> <?php
 						}
 						if ( $postcode ) { ?>
-							<span itemprop="postalCode" class="lbc-address-postcode"><?php echo $postcode; ?></span> <?php
+							<span itemprop="postalCode" class="lbc-address-postcode"><?php echo esc_html( $postcode ); ?></span> <?php
 						} ?>
 						</div>
 					</div> <?php
@@ -165,7 +165,7 @@ class Local_Business_Contact_Public {
 						<span class="lbc-phone-label">
 							<?php echo esc_html( apply_filters( 'lbc_filter_phone_label', __( 'Tel:', 'local-business-contact' ) ) ) . ' '; ?>
 						</span>
-						<a href="tel:<?php echo apply_filters( 'lbc_filter_phone_uri', preg_replace( '/[^0-9]/', '', $phone ) ); ?>"><?php echo $phone; ?></a>
+						<a href="<?php echo apply_filters( 'lbc_filter_phone_uri', esc_url( 'tel:' . preg_replace( '/[^0-9]/', '', $phone ) ) ); ?>"><?php echo esc_html( $phone ); ?></a>
 					</div> <?php
 				}
 				
@@ -174,7 +174,7 @@ class Local_Business_Contact_Public {
 						<span class="lbc-fax-label">
 							<?php echo esc_html( apply_filters( 'lbc_filter_fax_label', __( 'Fax:', 'local-business-contact' ) ) ) . ' '; ?>
 						</span>
-						<a href="fax:<?php echo apply_filters( 'lbc_filter_fax_uri', preg_replace( '/[^0-9]/', '', $fax ) ); ?>"><?php echo $fax; ?></a>
+						<a href="<?php echo apply_filters( 'lbc_filter_fax_uri', esc_url( 'fax:' . preg_replace( '/[^0-9]/', '', $fax ) ) ); ?>"><?php echo esc_html( $fax ); ?></a>
 					</div> <?php
 				}
 				
@@ -183,13 +183,13 @@ class Local_Business_Contact_Public {
 						<span class="lbc-email-label">
 							<?php echo esc_html( apply_filters( 'lbc_filter_email_label', __( 'Email:', 'local-business-contact' ) ) ) . ' '; ?>
 						</span>
-						<a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a>
+						<a href="mailto:<?php echo esc_html( antispambot( $email ) ); ?>"><?php echo esc_html( antispambot( $email ) ); ?></a>
 					</div> <?php
 				}
 				
 				if ( $extra && 1 == $extra_check && 1 == $atts['extra'] ) { ?>
 					<div class="lbc-additional-data">
-						<?php echo apply_filters( 'lbc_additional_data_content', $extra ); ?>
+						<?php echo apply_filters( 'lbc_additional_data_content', wp_kses_post( $extra ) ); ?>
 					</div> <?php
 				}
 				
