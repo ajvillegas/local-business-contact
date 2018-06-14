@@ -165,7 +165,7 @@ class Local_Business_Contact_Public {
 						<span class="lbc-phone-label">
 							<?php echo esc_html( apply_filters( 'lbc_filter_phone_label', __( 'Tel:', 'local-business-contact' ) ) ) . ' '; ?>
 						</span>
-						<a href="<?php echo apply_filters( 'lbc_filter_phone_uri', esc_url( 'tel:' . preg_replace( '/[^0-9]/', '', $phone ) ) ); ?>"><?php echo esc_html( $phone ); ?></a>
+						<a href="tel:<?php echo esc_html( preg_replace( '/[^0-9+]/', '', apply_filters( 'lbc_filter_phone_uri', $phone ) ) ); ?>"><?php echo esc_html( $phone ); ?></a>
 					</div> <?php
 				}
 				
@@ -174,7 +174,7 @@ class Local_Business_Contact_Public {
 						<span class="lbc-fax-label">
 							<?php echo esc_html( apply_filters( 'lbc_filter_fax_label', __( 'Fax:', 'local-business-contact' ) ) ) . ' '; ?>
 						</span>
-						<a href="<?php echo apply_filters( 'lbc_filter_fax_uri', esc_url( 'fax:' . preg_replace( '/[^0-9]/', '', $fax ) ) ); ?>"><?php echo esc_html( $fax ); ?></a>
+						<a href="fax:<?php echo esc_html( preg_replace( '/[^0-9+]/', '', apply_filters( 'lbc_filter_fax_uri', $fax ) ) ); ?>"><?php echo esc_html( $fax ); ?></a>
 					</div> <?php
 				}
 				
